@@ -1,0 +1,52 @@
+{
+  "proxy": "http://localhost:9000/",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "antd": "^3.26.11",
+    "bootstrap": "^4.4.1",
+    "customize-cra": "^0.9.1",
+    "isomorphic-fetch": "^2.2.1",
+    "mathjs": "^6.6.1",
+    "plotly.js": "^1.52.3",
+    "react": "^16.12.0",
+    "react-app-rewired": "^2.1.5",
+    "react-bootstrap": "^1.0.0-beta.17",
+    "react-dom": "^16.12.0",
+    "react-plotly.js": "^2.4.0",
+    "react-plotlyjs": "^0.4.4",
+    "react-router": "^3.2.5",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0"
+  },
+  "scripts": {
+    "client": "react-app-rewired start",
+    "server": "cd sever && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
